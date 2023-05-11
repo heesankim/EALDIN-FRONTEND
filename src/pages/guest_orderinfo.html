@@ -59,32 +59,6 @@
                                     <button class="search-button">검색</button>
                                 </div>
                             </div>
-                            <div class="header-title-info">
-                                <div class="header-info-item">
-                                    <a
-                                        href="./cart.html"
-                                        class="header-info-basket"
-                                    >
-                                        <img
-                                            src="https://svgsilh.com/svg/371980.svg"
-                                            alt="장바구니 이미지"
-                                            class="basket-img"
-                                        />
-                                    </a>
-                                </div>
-                                <div class="header-info-item">
-                                    <a
-                                        href="./mypage.html"
-                                        class="header-info-my"
-                                    >
-                                        <img
-                                            src="https://svgsilh.com/svg/158453.svg"
-                                            alt="사람모양 이미지"
-                                            class="my-img"
-                                        />
-                                    </a>
-                                </div>
-                            </div>
                         </nav>
                     </div>
                 </div>
@@ -107,81 +81,12 @@
                             <div class="main-aboutUser">
                                 <div class="top">
                                     <h3 class="user-name">홍길동</h3>
-                                    <a href="./modify_mypage.html"
-                                        ><button class="update-detail-btn">
-                                            내 정보 변경
-                                        </button></a
-                                    >
                                 </div>
-                                <p class="email">eladin@gmail.com</p>
                             </div>
                         </section>
                         <div class="main-orderlist">
                             <h2 class="header-text">주문/배송 목록</h2>
                             <section></section>
-                        </div>
-                    </div>
-                </div>
-                <!-- 주문정보 수정 -->
-                <div class="edit-order">
-                    <div class="edit-order-content">
-                        <h1>주문 정보 수정</h1>
-                        <div>
-                            <label for="recipient">수령인</label>
-                            <input
-                                type="text"
-                                id="recipient"
-                                name="recipient"
-                            />
-                        </div>
-                        <div>
-                            <label for="adress">배송지</label>
-                            <div class="address-field field">
-                                <div class="postcode-input">
-                                    <input
-                                        id="postcode"
-                                        class="essential order-form"
-                                        type="text"
-                                        name="postcode"
-                                        placeholder="우편번호"
-                                    />
-                                    <button type="button" id="search-btn">
-                                        주소검색
-                                    </button>
-                                </div>
-                                <input
-                                    id="address1"
-                                    class="essential"
-                                    type="text"
-                                    name="address1"
-                                    placeholder="주소"
-                                    value=""
-                                />
-                                <input
-                                    id="address2"
-                                    class="essential"
-                                    type="text"
-                                    name="address2"
-                                    placeholder="상세 주소"
-                                />
-                                <input
-                                    id="extraAddress"
-                                    type="text"
-                                    placeholder="참고 항목"
-                                />
-                            </div>
-                        </div>
-                        <div>
-                            <label for="phone-num">휴대전화</label>
-                            <input
-                                type="text"
-                                id="phone-num"
-                                name="phone-num"
-                            />
-                        </div>
-                        <div class="edit-order-btn">
-                            <button class="cancel">닫기</button>
-                            <button class="complete">수정하기</button>
                         </div>
                     </div>
                 </div>
@@ -232,12 +137,8 @@
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="../js/isLogin.js"></script>
-        <script src="../js/mypageRender.js"></script>
         <script src="../api/logout.js"></script>
-        <script src="../api/mypage.js"></script>
-        <script src="../api/getmypage.js"></script>
         <script src="../api/search.js"></script>
-        <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-        <script src="../api/address.js"></script>
+        <script src="../js/guestInfoRender.js"></script>
     </body>
 </html>
